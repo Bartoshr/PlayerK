@@ -35,7 +35,7 @@ data class TimePosition(
         }
 
     private fun Duration.format(): String =
-        "${inWholeMinutes.padded()}:${inWholeSeconds.padded()}"
+        "${inWholeMinutes.padded()}:${(inWholeSeconds % 60).padded()}"
 
     private fun Long.padded(): String = toString().padStart(2, '0')
 }
