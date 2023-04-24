@@ -11,8 +11,8 @@ data class Song(
             get() = Song(
                 title = "The Entertainer",
                 artist = "Scott Joplin",
-                coverUrl = "",
-                audioUrl = ""
+                coverUrl = "https://github.com/Bartoshr/PlayerK/raw/main/resources/cover.png",
+                audioUrl = "https://github.com/Bartoshr/PlayerK/raw/main/resources/audio.mp3"
             )
     }
 }
