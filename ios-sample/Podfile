@@ -1,0 +1,19 @@
+#
+#  Podfile
+#
+
+# Pod sources
+source 'https://github.com/CocoaPods/Specs.git'
+
+# Initial configuration
+platform :ios, '14.1'
+use_frameworks!
+inhibit_all_warnings!
+
+project 'iosApp'
+
+target 'iosApp' do
+  pod 'KMPNativeCoroutinesAsync', '1.0.0-ALPHA-4' 
+  pod 'SwiftFormat/CLI', '~> 0.47.11'
+  pod 'SwiftLint', '~> 0.47.1'
+end

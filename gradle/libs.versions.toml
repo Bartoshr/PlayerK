@@ -1,0 +1,70 @@
+[versions]
+
+# Android SDK
+compileSdk = "33"
+minSdk = "26"
+targetSdk = "33"
+
+# Kotlin
+kotlinVersion = "1.8.0"
+
+# Plugins
+androidGradlePlugin = "7.4.2"
+kspPlugin = "1.8.0-1.0.9"
+nativeCoroutinesPlugin = "1.0.0-ALPHA-4"
+
+# PlayerK
+versionCode = "1"
+versionName = "0.1.0"
+
+# Tools
+leakcanaryVersion = "2.10"
+detektVersion = "1.20.0"
+
+coroutinesVersion = "1.6.4"
+mockkVersion = "1.12.4"
+media3Version = "1.0.1"
+composeVersion = "2023.01.00"
+landscapistVersion = "2.1.9"
+
+[libraries]
+gradle-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlinVersion" }
+gradle-detekt-plugin = { module = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin", version.ref = "detektVersion" }
+gradle-detekt-formatting = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "detektVersion" }
+
+# AndroidX
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version = "1.7.1" }
+androidx-lifecycle = { module = "androidx.activity:activity-compose", version = "1.7.1" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version = "2.5.3" }
+androidx-media3-session = { module = "androidx.media3:media3-session", version.ref = "media3Version" }
+androidx-media3-exoplayer = { module = "androidx.media3:media3-exoplayer", version.ref = "media3Version" }
+androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version = "1.7.1" }
+
+# Compose
+compose-bom = { module = "androidx.compose:compose-bom", version.ref = "composeVersion" }
+compose-ui = { module = "androidx.compose.ui:ui" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+compose-foundation = { module = "androidx.compose.foundation:foundation" }
+compose-material = { module = "androidx.compose.material:material" }
+compose-icons = { module = "androidx.compose.material:material-icons-extended" }
+
+# Landscapist
+landscapist-bom = { module = "com.github.skydoves:landscapist-bom", version.ref = "landscapistVersion"}
+landscapist-coil = { module = "com.github.skydoves:landscapist-coil" }
+landscapist-placeholder = { module = "com.github.skydoves:landscapist-placeholder" }
+
+#LeakCanary
+leakcanary = { module = "com.squareup.leakcanary:leakcanary-android", version.ref = "leakcanaryVersion"}
+
+# Kotlin
+coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutinesVersion" }
+
+[plugins]
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinVersion" }
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlinVersion" }
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+devtools-ksp = { id = "com.google.devtools.ksp", version.ref = "kspPlugin" }
+native-coroutines = { id = "com.rickclephas.kmp.nativecoroutines", version.ref = "nativeCoroutinesPlugin" }
+
