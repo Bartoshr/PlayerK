@@ -6,12 +6,12 @@ minSdk = "26"
 targetSdk = "33"
 
 # Kotlin
-kotlinVersion = "1.8.0"
+kotlinVersion = "1.8.21"
 
 # Plugins
 androidGradlePlugin = "7.4.2"
-kspPlugin = "1.8.0-1.0.9"
-nativeCoroutinesPlugin = "1.0.0-ALPHA-4"
+kspPlugin = "1.8.21-1.0.11"
+nativeCoroutinesPlugin = "1.0.0-ALPHA-10"
 
 # PlayerK
 versionCode = "1"
@@ -21,7 +21,7 @@ versionName = "0.1.0"
 leakcanaryVersion = "2.10"
 detektVersion = "1.20.0"
 
-coroutinesVersion = "1.6.4"
+coroutinesVersion = "1.7.1"
 mockkVersion = "1.12.4"
 media3Version = "1.0.1"
 composeVersion = "2023.01.00"

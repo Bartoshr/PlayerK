@@ -71,11 +71,10 @@ Application is composed of 4 modules
 
 
 1. Run `./gradlew assembleXCFramework`
-2. Move to `ios-sample` directory
-3. Run `pod install`
-3. Open `ios-sample/iosApp.xcworkspace`
-4. Build project
+2. Open `ios-sample/iosApp.xcworkspace`
+3. Build project
 
+or select ios-sample configuration in Android Studio
 
 ---
 

@@ -8,7 +8,7 @@ import platform.Foundation.NSURL
 import kotlin.time.Duration
 import kotlin.time.Duration.Companion.seconds
 import kotlin.time.DurationUnit
-import kotlin.time.ExperimentalTime
+
 
 class IosPlayer : AudioPlayer {
 
